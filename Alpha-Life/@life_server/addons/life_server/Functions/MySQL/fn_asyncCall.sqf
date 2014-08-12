@@ -1,10 +1,10 @@
 /*
 	File: fn_asyncCall.sqf
 	Author: Bryan "Tonic" Boardwine
-
+	
 	Description:
 	Commits an asynchronous call to Arma2MySQL
-
+	
 	Parameters:
 		0: STRING (Query to be ran).
 		1: INTEGER (1 = ASYNC + not return for update/insert, 2 = ASYNC + return for query's).

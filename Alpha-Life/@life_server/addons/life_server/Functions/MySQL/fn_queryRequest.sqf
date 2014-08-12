@@ -25,7 +25,7 @@ _ownerID = owner _ownerID;
 _query = switch(_side) do {
 	case west: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	case civilian: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
-	case independent: {_returnCount = 8; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel FROM players WHERE playerid='%1'",_uid];};
+	case independent: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
@@ -71,6 +71,7 @@ _queryResult set[6,_old];
 _new = [(_queryResult select 8)] call DB_fnc_mresToArray;
 if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 _queryResult set[8,_new];
+
 //Parse data for specific side.
 switch (_side) do {
 	case west: {
@@ -85,6 +86,7 @@ switch (_side) do {
 		_gangData = _uid spawn TON_fnc_queryPlayerGang;
 		waitUntil{scriptDone _gangData};
 		_queryResult set[count _queryResult,(missionNamespace getVariable[format["gang_%1",_uid],[]])];
+		//missionNamespace setVariable[format["gang_%1",_uid],nil];
 	};
 };
 

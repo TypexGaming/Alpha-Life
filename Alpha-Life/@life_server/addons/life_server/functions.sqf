@@ -9,18 +9,18 @@ publicVariable "life_fnc_sidechat";
 
 fnc_index =
 compileFinal "
-	private[""_item"",""_stack""];
-	_item = _this select 0;
-	_stack = _this select 1;
-	_return = -1;
+			private[""_item"",""_stack""];
+			_item = _this select 0;
+			_stack = _this select 1;
+			_return = -1;
 
-	{
-		if(_item in _x) exitWith {
+		{
+			if(_item in _x) exitWith {
 			_return = _forEachIndex;
 		};
-	} foreach _stack;
+		} foreach _stack;
 
-	_return;
+_return;
 ";
 
 fnc_player_query =

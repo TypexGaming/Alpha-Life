@@ -44,4 +44,8 @@ switch (_type) do
     case "depanneur": {10000};
 	case "donator": {1000000};
 	case "uranium": {2000000};
+	case "stiller":{50000};
+	case "liquor":{100000};
+	case "bottler":{100000};
+	case "mash":{100000};
 };

@@ -54,6 +54,17 @@ switch (_mode) do
 			case "uranium2b": {_var = "license_civ_uranium"}; // Add this
 			case "uranium3": {_var = "license_civ_uranium"}; // Add this
 			case "uranium4": {_var = "license_civ_uranium"}; // Add this 
+			case "liquor": {_var = "license_civ_liquor"};
+			case "beer": {_var = "license_civ_liquor"};
+			case "stiller": {_var = "license_civ_stiller"};
+			case "whiskey": {_var = "license_civ_stiller"};
+			case "moonshine": {_var = "license_civ_stiller"};
+			case "mash": {_var = "license_civ_stiller"};
+			case "bottledshine": {_var = "license_civ_bottler"};
+			case "bottledbeer": {_var = "license_civ_bottler"};
+			case "bottledwhiskey": {_var = "license_civ_bottler"};
+			case "bottler": {_var = "license_civ_bottler"};
+			case "glassbottle": {_var = "license_civ_bottler"};
 			default {_var = ""};
 		};
 	};

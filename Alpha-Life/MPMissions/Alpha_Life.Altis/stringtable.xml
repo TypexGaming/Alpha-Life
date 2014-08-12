@@ -554,6 +554,15 @@
 		<Key ID="STR_Item_Tabac">
 			<Original>Tabac</Original>
 		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Rye Plants</Original>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Hops</Original>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Yeast</Original>
+		</Key>
 	</Package>
 	<Package name="Federal_Reserve">
 		<Key ID="STR_NOTF_FRRobbery_fail">
@@ -668,4 +677,33 @@
 			<Original>APPELS D'URGENCE | Un abus conduit à un BAN !</Original>
 		</Key>
 	</Package>
+	<Package name="Gather">
+	    <Key ID="STR_Gather_Rye">
+			<Original>Ramasser Seigle</Original>
+		</Key>
+		<Key ID="STR_Gather_Hops">
+			<Original>Ramasser Houblon</Original>
+		</Key>
+		<Key ID="STR_Gather_Yeast">
+			<Original>Ramasser Levure</Original>
+		</Key>
+	</Package>
+	<Package name="Misc">
+	<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 est passé en état d'ébriété en public!</Original>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>Vous êtes deja en train de boire</Original>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>Ne buvez pas pendant le travail</Original>
+			<French>Pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>Coma ethilique</Original>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>Bordel je comprend plus rien</Original>
+		</Key>
+		</Package>
 </Project>

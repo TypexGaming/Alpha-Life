@@ -88,6 +88,18 @@ switch (_var) do
 	case "life_inv_uranium3": {"Uranium Purifié"}; // Add This
 	case "life_inv_uranium4": {"Uranium Concentré"}; // Add This
 	case "life_inv_uranium": {"Uranium"}; // Add This
+	case "life_inv_mash": {"Grain Mash Mixture"};
+	case "life_inv_yeast": {"Yeast"};
+	case "life_inv_rye": {"Rye"};
+	case "life_inv_hops": {"Hops"};
+	case "life_inv_whiskey": {"Distilled Whiskey"};
+	case "life_inv_beerp": {"Fermented Beer"};
+	case "life_inv_bottles": {"Glass Bottles"};
+	case "life_inv_cornmeal": {"Cornmeal Grains"};
+	case "life_inv_bottledwhiskey": {"Bottled Whiskey"};
+	case "life_inv_bottledbeer": {"Bottled Beer"};
+	case "life_inv_bottledshine": {"Bottled Moonshine"};
+	case "life_inv_moonshine": {"Distilled Moonshine"};
 	
 	//License Block
 	case "license_civ_driver": {"Permis de conduire (véhicule léger)"};
@@ -122,4 +134,7 @@ switch (_var) do
     case "license_civ_cigare": {"Producteur de Cigare"};
 	case "license_civ_donator": {"Licence Donateur"};
 	case "license_civ_uranium": {"Formation Uranium"};
+	case "license_civ_stiller": {"Distillers License"};
+	case "license_civ_liquor": {"Liquor License"};
+	case "license_civ_bottler": {"Bottling License"};
 };

@@ -151,6 +151,9 @@ class Life_Client_Core
 		class surrender {};
 		class removeWeaponAction {};
 		class gatherUranium {};
+		class gatherRye {};
+		class gatherHops {};
+		class gatherYeast {};
 	};
 	
 	class Housing
@@ -352,6 +355,7 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copOpener {};
 		class copLoadout {};
+		class breathalyzer {};
 	};
 	
 	class Gangs
@@ -418,6 +422,9 @@ class Life_Client_Core
 		class cocaine {};
 		class heroin {};
 		class weed {};
+		class drinkbeer {};
+		class drinkmoonshine {};
+		class drinkwhiskey {};
 	};
 	
 	class Dialog_Controls

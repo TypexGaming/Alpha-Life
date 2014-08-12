@@ -87,5 +87,17 @@ switch (_item) do
 	case "uranium3": {4};
 	case "uranium4": {4};
 	case "uranium": {4};
+	case "rye": {2};
+	case "hops": {2};
+	case "yeast": {2};
+	case "cornmeal": {2};
+	case "mash": {2};
+	case "whiskey": {4};
+	case "beerp": {4};
+	case "moonshine": {5};
+	case "bottledwhiskey": {5};
+	case "bottledbeer": {5};
+	case "bottledshine": {5};
+	case "bottles": {1};
 	default {1};
 };

@@ -32,6 +32,7 @@ switch(_type) do
     case "482": {_type = ["Deal",5000]};
     case "483": {_type = ["Traffic de drogue",9500]};
     case "503": {_type = ["Handel mit exotischen Gütern",25000]};
+	case "390": {_type = ["Intoxication Publique",15000]};
     
     case "1": {_type = ["Tueur en série",150000]}; //name and price
 	case "2": {_type = ["Tentative de vol de véhicule",2500]};

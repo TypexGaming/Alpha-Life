@@ -178,3 +178,11 @@
 		
 	};
 };
+
+_illegalmarkers = ["marker1","marker2","marker3"];
+
+if (playerSide == west) then {
+
+{ deleteMarkerLocal _x; } forEach _illegalmarkers;
+
+};

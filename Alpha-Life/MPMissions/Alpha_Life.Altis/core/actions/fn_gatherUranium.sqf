@@ -12,8 +12,8 @@ if(_sum > 0) then
 {
 	life_action_gather = true;
 	titleText["Récolte des déchets d'Uranium...","PLAIN"];
-	titleFadeOut 6;
-	sleep 6;
+	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
+	sleep 2;
 	if(([true,"uranium1",_sum] call life_fnc_handleInv)) then
 	{
 		titleText[format["Tu as ramassé %1 déchets d'Uranium.",_sum],"PLAIN"];

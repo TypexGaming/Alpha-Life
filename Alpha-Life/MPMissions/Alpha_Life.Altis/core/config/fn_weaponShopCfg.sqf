@@ -579,6 +579,25 @@ switch(_shop) do
 		];
 	};
 	
+	case "uranium":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Tu n'es pas civil!"};
+			case (!license_civ_uranium): {"Tu n'as pas la formation Uranium!"};
+			default
+			{
+				["Objet Traitement Uranium",
+					[
+						["ToolKit",nil,200],
+						["FirstAidKit",nil,100],
+						["U_C_Scientist","Combinaison Antiradiation",100000]
+					]
+				];
+			};
+		};
+	};
+	
 	case "donator":
 	{
 		switch(true) do
@@ -639,25 +658,6 @@ switch(_shop) do
 					]
 				];
 			};
-			
-	case "uranium":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"Tu n'es pas civil!"};
-			case (!license_civ_uranium): {"Tu n'as pas la formation Uranium!"};
-			default
-			{
-				["Objet Traitement Uranium",
-					[
-						["ToolKit",nil,200],
-						["FirstAidKit",nil,100],
-						["U_C_Scientist","Combinaison Antiradiation",100000]
-					]
-				];
-			};
-		};
-	};
 
 			case (__GETC__(life_donator) == 2):
 			{

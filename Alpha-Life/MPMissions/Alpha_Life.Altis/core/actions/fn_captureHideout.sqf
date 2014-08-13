@@ -5,7 +5,7 @@
 	Description:
 	Blah blah.
 */
-private["_group","_hideout","_action","_cpRate","_cP","_progressBar","_title","_titleText","_ui","_flagTexture"];
+private["_group","_hideout","_action","_cpRate","_cP","_progressBar","_title","_titleText","_ui","_flagTexture","_markername","_gangname2"];
 _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barracks_V2_F"],25]) select 0;
 _group = _hideout getVariable ["gangOwner",grpNull];
 
@@ -85,3 +85,20 @@ _this select 0 setFlagTexture _flagTexture;
 [[[0,1],format["%1 et son gang: %2 - ont pris le contrôle d'un repaire locale",name player,(group player) getVariable "gang_name" ]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 _hideout setVariable["inCapture",false,true];
 _hideout setVariable["gangOwner",grpPlayer,true];
+    // CREATE MARKER AT MAP BY Pictureclass
+     
+    _markername = str(getPos _hideout);
+    _gangname2 = formatText["Capturer par: %1",(group player) getVariable "gang_name"];
+    if (getMarkerColor _markername == "") then
+    {
+    gang_owner_marker = createMarker [_markername, position player];
+    _markername setMarkerShape "ICON";
+    _markername setMarkerType "hd_warning";
+    _markername setMarkerColor "ColorBlue";
+    _markername setMarkerText str(_gangname2);
+    gang_owner_marker = "";
+    }
+    else
+    {
+    _markername setMarkerText str(_gangname2);
+    };

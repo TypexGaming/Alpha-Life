@@ -30,3 +30,4 @@
 #include "market.hpp"
 #include "smartphone.hpp"
 #include "wantedadd2.hpp"
+#include "statusBar.hpp"

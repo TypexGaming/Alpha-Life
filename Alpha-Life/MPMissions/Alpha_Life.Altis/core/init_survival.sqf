@@ -179,7 +179,7 @@
 	};
 };
 
-_illegalmarkers = ["marker1","marker2","marker3"];
+_illegalmarkers = ["cocaine_1","coke_area","Rebelop","turtle_dealer_1","Dealer_1","gang_area_2","buy_arme_1","Rebelop_1"];
 
 if (playerSide == west) then {
 

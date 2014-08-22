@@ -5,7 +5,7 @@
 	Description:
 	Used for stripping certain licenses off of civilians as punishment.
 */
-private["_state"];
+/*private["_state"];
 _state = [_this,0,1,[0]] call BIS_fnc_param;
 
 switch (_state) do
@@ -48,4 +48,4 @@ switch (_state) do
 			hint "You have lost your firearms license for manslaughter.";
 		};
 	};
-};
+};*/
